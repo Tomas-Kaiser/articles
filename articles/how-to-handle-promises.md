@@ -1,3 +1,5 @@
+# How to handle Promise in Javascript
+
 Before we dive in, let's briefly explore what the promise actually is.
 
 It is like in the real world where I promise you to teach you how to handle it. There are two outputs of my promise. Either I fulfilled aka `resolved` or failed aka `rejected` my promise. In the asynchronous code it promises you that it will return some data at some point of the future.
