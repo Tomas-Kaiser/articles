@@ -70,6 +70,7 @@ init()
 ```
 
 In summary, promises are used in asynchronous code and I tried to show you two ways how to handle it.
+
 ---
 You can find complete code below. Feel free to copy/paste it to your index.js and play around. To run the code in your terminal you can use a following command: `node index.js`
 
