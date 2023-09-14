@@ -1,21 +1,19 @@
-# How to handle Promise in Javascript
-
 Before we dive in, let's briefly explore what the promise actually is.
 
-It is like in the real world where I promise you to teach you how to handle it. There are two outputs of my promise. Either I fulfilled aka `resolved` or failed aka `rejected` my promise. In the asynchronous code it promises you that it will return some data at some point of the future.
+It is like in the real world where I promise you to teach you how to handle it. There are two outputs of my promise. Either I fulfil aka `resolved` or I fail aka `rejected` my promise. In the asynchronous code it promises you that it will return some data at some point of the future.
 
-So now we know that promise object returns one of the two possible outputs, let's look at the code.
+So now that we know the promise object returns one of the two possible outputs, let's look at the code.
 
-First we need to create a promise object as below
+First we need to create a promise object as below:
 ```javascript
 // The new Promise() constructor returns a promise object.
 const promiseObj = new Promise()
 ``` 
 
-The `new Promise()` accepts a callback function as an argument such: `new Promise(function (resolve, reject) { // ... })`
+The `new Promise()` accepts a callback function as an argument such as: `new Promise(function (resolve, reject) { // ... })`
 
 ```javascript
-// The callback function must have two arguments: resolve and reject which represents another built-in functions
+// The callback function must have two arguments: resolve and reject that represent other built-in functions
 const promiseObj = new Promise(function (resolve, reject) {
     // 50 % chance that this promise will return resolve
     if (getRandomNum() < 0.5)
@@ -30,7 +28,7 @@ function getRandomNum() {
 }
 ```
 
-Note: the else statement block is not necessary since the promise returns resolve or reject. We can simplify that such:
+Note: the else statement block is not necessary since the promise returns resolve or reject. We can simplify as such:
 
 ```javascript
     if (getRandomNum() < 0.5)
@@ -38,7 +36,7 @@ Note: the else statement block is not necessary since the promise returns resolv
     reject("I did not teach you promise properly!")
 ```
 
-We created the promiseObj, now we need to properly handle it. The old way (not necessary a wrong way) is to use .then() and .catch() method. With new ES6 syntax, we can use async/await key words to work with promises.
+We created the promiseObj, now we need to properly handle it. The old way (not necessarily a wrong one) is to use .then() and .catch() method. With new ES6 syntax, we can use async/await key words to work with promises.
 
 **Older version**:
 ```javascript
@@ -69,10 +67,9 @@ async function init() {
 init()
 ```
 
-In summary, promises are used in asynchronous code and I tried to show you two ways how to handle it.
-
+In summary, promises are used in asynchronous code and I tried to show you two ways how to handle them.
 ---
-You can find complete code below. Feel free to copy/paste it to your index.js and play around. To run the code in your terminal you can use a following command: `node index.js`
+You can find complete code below. Feel free to copy/paste it to your index.js and play around with it. To run the code in your terminal, you can use a following command: `node index.js`
 
 ```javascript
 // Promise accepts a callback with two arguments - resolve, reject
