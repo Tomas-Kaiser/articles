@@ -1,6 +1,6 @@
 # Three Ways to Create an Object in Javascript
 
-Did you know, there are three ways to create object in JS? 
+Did you know, there are three fundamental ways to create object in JS? 
 
 We can use one of those below approaches:
 
@@ -29,11 +29,11 @@ const car = {
 }
 ```
 
-This approach is totaly fine if we work on a very simple application. Nevertheless, we usually work on more complex applications, therefore we need a different (mantainable) way to create objects.
+This approach is totally fine if we work on a very simple application. Nevertheless, we usually work on more complex applications, therefore we need a different (maintainable) way to create objects.
 
 ## Factory Function
 
-The object literal syntax have a very tiny problem. Imagine that we want to create two or more cars. With that approach, we would have to duplicate the code especially the honk method implementation. What if we discover a bug in that implementaion? In that case we would have to go all over the objects and fix the bug. Would not be better, if we could fix the bug in one place only? I bet your answer is yes, so then we can use Factory Function for creating objects. It is like a factory in real world where the factory produces products, this Factory Function produces objets. Let's look at the code below:
+The object literal syntax have a very tiny problem. Imagine that we want to create two or more cars. With that approach, we would have to duplicate the code especially the honk method implementation. What if we discover a bug in that implementation? In that case we would have to go all over the objects and fix the bug. Would not be better, if we could fix the bug in one place only? I bet your answer is yes, so then we can use Factory Function for creating objects. It is like a factory in real world where the factory produces products, this Factory Function produces objets. Let's look at the code below:
 
 ```javascript
 // Define a function with 4 parameters so that we can create a different objects with the same method called honk
@@ -58,7 +58,7 @@ const car1 = createCar("BMW", "Blue", false, 1000);
 const car2 = createCar("Tesla", "Red", true, 1000);
 ```
 
-The bueaty of that code is, if we discover a bug in in the implementation of the honk method, then we can fix the problem in the single place.
+The beauty of that code is, if we discover a bug in in the implementation of the honk method, then we can fix the problem in the single place.
 
 ## Constructor Function
 
@@ -80,7 +80,7 @@ const car1 = new Car("BMW", "Blue", false, 1000);
 const car2 = new Car("Tesla", "Red", true, 1000);
 ```
 
-We use Pascal naming convention for Constructor Function by convention of other javascript developers wherease we use camel notation for factory function. The pascal notation starts with an upper case letter as such `CreateFunction` or `Car` as example above. In contrast, the camel notation starts with a lower case letter as such `createFunction`.
+We use Pascal naming convention for Constructor Function by convention of other javascript developers wherase we use camel notation for factory function. The pascal notation starts with an upper case letter as such `CreateFunction` or `Car` as example above. In contrast, the camel notation starts with a lower case letter as such `createFunction`.
 
 Whenever we use a `new` operator, three things happen:
 
@@ -88,6 +88,6 @@ Whenever we use a `new` operator, three things happen:
 2. The keyword `this` points to the new empty object. The `this` will set the properties such brand, color etc. to the new javascript object. 
 3. The `new` operator returns the new car object from the `function Car`. We could put `return this` statement into the Car function but this is done under the hood as well. So we do not have to explicitly mention it there.
 
-You might have a question what approach is better. Developers who knows Java or any other OOP language, there are more fimiliar with the Constructor Function, but if you are not one of them, then you might want to use Factory Function. It is more or less personal choice but stick with one approach in your entire app.
+You might have a question what approach is better. Developers who knows Java or any other OOP language, there are more familiar with the Constructor Function, but if you are not one of them, then you might want to use Factory Function. It is more or less personal choice but stick with one approach in your entire app.
 
 Happy coding!
