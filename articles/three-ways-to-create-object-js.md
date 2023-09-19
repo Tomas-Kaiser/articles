@@ -1,4 +1,4 @@
-# Three Ways to Create an Object in Javascript
+# Three Ways to Create an Object in JavaScript
 
 Did you know that, there are three fundamental ways to create an object in JS? 
 
@@ -80,12 +80,12 @@ const car1 = new Car("BMW", "Blue", false, 1000);
 const car2 = new Car("Tesla", "Red", true, 1000);
 ```
 
-We use Pascal naming convention for Constructor Function by convention of other javascript developers whereas we use camel notation for factory function. The pascal notation starts with an upper case letter, such as `CreateFunction` or `Car` (see the example above). In contrast, the camel notation starts with a lower case letter such as `createFunction`.
+We use Pascal naming convention for Constructor Function by convention of other JavaScript developers whereas we use camel notation for factory function. The pascal notation starts with an upper case letter, such as `CreateFunction` or `Car` (see the example above). In contrast, the camel notation starts with a lower case letter such as `createFunction`.
 
 Whenever we use a `new` operator, three things happen:
 
-1. This `new` operator creates an empty javascript object like `const car1 = {}`. That is happening under the hood.
-2. The keyword `this` points to the new empty object. The `this` will set the properties such as brand, colour etc. to the new javascript object. 
+1. This `new` operator creates an empty JavaScript object like `const car1 = {}`. That is happening under the hood.
+2. The keyword `this` points to the new empty object. The `this` will set the properties such as brand, colour etc. to the new JavaScript object. 
 3. The `new` operator returns the new car object from the `function Car`. We could put `return this` statement into the Car function but this is done under the hood as well. So, we do not have to explicitly mention it there.
 
 You might have a question on what approach is better. Developers who know Java or any other OOP language are more familiar with the Constructor Function, but if you are not one of them, then you might want to use Factory Function. More or less, it comes down to your personal choice, but make sure to stick with one approach in your entire app.
