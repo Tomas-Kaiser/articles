@@ -1,12 +1,12 @@
 # Function Declaration X Expression in JavaScript
 
-It is fairly common to be asked to explain a difference between a function declaration and a function expression during a job interview. 
+It is fairly common to be asked to explain a difference between a `function declaration` and a `function expression` during a job interview. 
 
 If you are not entirely sure how would you tackle this question, let's dive in.
 
 ## Function Declaration
 
-The function declaration is the simpliest way how to delcare a function.
+The function declaration is the simplest way how to declare a function.
 
 ```javascript
 function sayHello() {
@@ -17,7 +17,7 @@ sayHello();
 ```
 
 ## Function Expression
-The other way to declare a function is called function expression. The only difference is that the function expression is stored in a variable.
+The other way to declare a function is called a `function expression`. The only difference is that the function expression is stored in a variable.
 
 ```javascript
 const greet = function sayHello() {
@@ -38,7 +38,7 @@ function sayHello() {
 }
 ```
 
-We cannot do the same with function expression. If we try to do that, we will get a following error `Uncaught ReferenceError: greet is not defined at index.js:2` 
+We cannot do the same with the function expression. If we try to do that, we will get a following error `Uncaught ReferenceError: greet is not defined at index.js:2` 
 
 ```javascript
 // we call it before we define the function expression
