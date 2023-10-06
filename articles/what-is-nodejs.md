@@ -22,6 +22,6 @@ Until 2009, we were able to execute JavaScript code only inside of browsers. In 
 - `fs.readFiles()` for working with the files system
 - `http.createServer()` for listening to requests in a given port
 
-To sum up, the Node is a program that includes a JS engine plus some additional modules that give us capabilities, not available inside browsers. Both Chrome browser and Node share the same JS engine but they provide different runtime environments for JavaScript. Saying that Node is neither not a programming language nor a framework. It is a purely runtime environment where we can run a JavasCript code.
+To sum up, the Node is a program that includes a JS engine plus some additional modules that give us capabilities, not available inside browsers. Both Chrome browser and Node share the same JS engine but they provide different runtime environments for JavaScript. Saying that Node is neither a programming language nor a framework. It is a purely runtime environment where we can run a JavasCript code.
 
 Happy Coding!
