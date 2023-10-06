@@ -1,6 +1,6 @@
 # What Is Node JS
 
-Node JS or just Node is an open-source and cross-platform runtime environment for executing JavaScript code outside of a browser. We usually use Node to build backend services also known as API's <b>A</b>pplication <b>P</b>rogramming <b>Interfaces</b>. 
+Node JS or just Node is an open-source and cross-platform runtime environment for executing JavaScript code outside of a browser. We usually use Node to build backend services also known as API's **A**pplication **P**rogramming **I**nterfaces. 
 
 Node is ideal for building highly scalable, data-intensive and real-time backend services that power client applications.
 
